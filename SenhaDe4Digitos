@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int senha;
+    printf("Entre com uma senha numerica (XXXX Digitos): ");
+    scanf("%i", &senha);
+    if (senha < 1000 || senha > 9999)
+      printf("ERRO: Senha deve ter exatamnete 4 digitos.\n");
+      // Não abra chave se o bloco tiver apenas uma linha.
+      // identação é muito importante.
+    else{
+         if (senha % 2 != 0 && senha % 17 == 0)
+         printf("Parabens: Sua senha é forte.\n");
+         else
+         printf("Lamento: Sua senha é fraca.\n");
+      }
+
+    return 0;
+}
