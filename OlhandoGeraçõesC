@@ -1,0 +1,34 @@
+/*
+Algoritmo: seleçao de encadeada
+Ler a idade:
+Intervalo: {-00, 14} : Fora da tabela 
+Intervalo: [15, 20] : Geração Z
+Intervalo: [21, 34] : Geração Y 
+Intervalo: [35, 49] : Geração X 
+Intervalo: [50, 64] : Geração Baby Boomers
+Intervalo: [65, +00] : Geração Silenciosa
+*/
+#include <stdio.h>
+
+int main() {
+    int idade;
+    printf("entre com sua idade (em anos): ");
+    scanf("%i", &idade);
+    if (idade <= 14)
+    printf("Fora da tabela.\n");
+    else{
+        if (idade <= 20)
+          printf("Geração Z\n");
+        else if (idade <= 34)
+          printf("Geração Y\n");
+        else if (idade < 50)
+          printf("Geração X\n");
+        else if (idade < 65)
+          printf(" Geração Baby Boomers");
+        else 
+        printf("Geração Silenciosa\n");
+        
+    }
+
+    return 0;
+}
