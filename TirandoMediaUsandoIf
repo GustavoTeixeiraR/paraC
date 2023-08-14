@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float B1, B2, media;
+    
+    printf("Insira a nota do 1° Bimestre: ");
+    scanf("%f", &B1);
+    printf("Insira a nota do 2° Bimestre: ");
+    scanf("%f", &B2);
+    media = (B1 + B2)/2;
+    if (media >= 5)
+      printf("Aprovado");
+    else
+      printf("Reprovado");
+
+    return 0;
+}
