@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    //ENTRADA:
+    float preco, total;
+    int quantidade;
+    printf("Dados da mercadoria:\n");
+    printf("Preço: R$"); scanf("%f", &preco);
+    printf("Quantidade (Unid.): "); scanf("%i", &quantidade);
+    total = preco*quantidade;
+    if(total > 1000.00)
+      total *= 0.97;
+      // se for sobrescrever uma variavel o operador aritmetico pode ser escrito em frente a equacao, como acima.
+    printf("Total a pagar: R$ %.2f\n", total);
+
+    return 0;
+}
