@@ -1,0 +1,12 @@
+ int contador, X, quantidade=0;
+    printf("Digite o valor de X (X > 1): "); scanf("%i", &X);
+    // tratamento de erro:
+    if (X <= 1) printf("ERRO: Valor de X deve ser maior que um (1). \n");
+    else{
+        printf("Os impares entre [%i, %.0f] são: \n", X, pow(X, 3));
+        for(contador = X; contador <= pow (X,3); contador++);
+        if(contador % 2 != 0){
+            quantidade++;
+            printf("%i° IMPAR: %i\n", quantidade, contador);
+        }
+    }
