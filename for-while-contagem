@@ -1,0 +1,27 @@
+/*contador = contador + 1
+contador += 1
+contador++
+++contador*/
+#include <stdio.h>
+
+int main()
+{
+    int contador, quantidade = 0;
+    printf("Os pares no intervalo, em ordem cresente, entre [0,100] são: \n");
+    for(contador = 0; contador <= 100; contador++){
+        if (contador % 2 == 0){
+            quantidade++;
+            printf("%i° PAR: %i\n", quantidade, contador);
+        }
+    }
+    quantidade = 0; 
+    printf("Os PARES no intervalo, em ordem decrescente, entre [0,100] são: \n");
+    for(contador = 100; contador >= 0; contador--){
+        if (contador % 2 == 0){
+            quantidade++;
+            printf("%i° PAR: %i\n", quantidade, contador);
+        }
+    }
+
+    return 0;
+}
